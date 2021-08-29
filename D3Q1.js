@@ -3,4 +3,3 @@ let [name, skills,scores]=student
 let [html, css, jsScore,reactScore]=scores
 console.log(name, skills, scores)
 console.log(jsScore, reactScore)
-
