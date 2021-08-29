@@ -26,4 +26,19 @@ newStudent.skills.backEnd.push({skill:'Express', level:9})
 newStudent.skills.dataBase.push({skill:'SQL', level:8})
 newStudent.skills.dataScience.push('SQL')
 console.log(newStudent.skills)                                  //  Updated data in new copied object
-console.log(student.skills)                                     // Original object without mutating
+console.log(student.skills)                                     // Original object remains without mutating
+
+console.log("Length of Student Object key "+Object.keys(newStudent).length)
+console.log("Length of Student Object Values "+Object.values(newStudent).length)
+console.log("Length of Skills Object key "+Object.keys(newStudent.skills).length)
+
+for (let prop in student) {                             //checking of student object has graphicDesign property or not
+    if(prop==="graphicDesign")
+    {
+        console.log("It has graphicDesign proprties")
+    }
+}
+
+for (let prop in student) {                             //  Iterating the keys of the student object
+     console.log(prop)
+}
